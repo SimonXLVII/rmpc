@@ -1,0 +1,149 @@
+.submit_cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 auto;
+    letter-spacing: 5px;
+    font-size: 100%;
+    background-image: url('/img/plitka_neon_podsvetka_5.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: local;
+    background-position: center;
+}
+
+.submit_form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 auto;
+    height: 100%;
+    width: inherit;
+    padding: 2% 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 20px white;
+}
+
+.loadingImage {
+    width: 550px;
+    height: 250px;
+    margin: 0 0 2%;
+}
+
+.submit_header {
+    margin: 0 auto 1%;
+    font-size: 150%;
+}
+
+.submit_name, .submit_descr, .submit_image{
+    color: black;
+    width: 100%;
+    padding-left: 1%;
+    margin: 1% auto 2%;
+}
+
+.submit_image {
+    color: white;
+}
+
+.edit_select_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_view_select {
+    color: black;
+    margin: 1% 0 2%;
+}
+
+.edit_view_select > option {
+    color: black;
+    margin: 1% 0 2%;
+}
+
+.submit_btn {
+    transition: 0.7s;
+    min-width: 100%;
+    margin: auto;
+    background-color: black;
+    border: 2px solid rgb(125, 125, 125);
+    box-shadow: inset 0 0 10px rgb(125, 125, 125);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 130%;
+    padding: 2% 5%;
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(125, 125, 125);
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px black;
+    color: black;
+}
+
+.sub_btn_back {
+    transition: 0.7s;
+    min-width: 100%;
+    margin: auto;
+    background-color: black;
+    border: 2px solid rgb(125, 125, 125);
+    box-shadow: inset 0 0 10px rgb(125, 125, 125);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration-line: unset;
+    letter-spacing: 5px;
+    font-size: 130%;
+    padding: 2% 5%;
+}
+
+.sub_btn_back:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(125, 125, 125);
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px black;
+    color: black;
+}
+
+.sub_slider_del {
+    display: flex;
+    flex-direction: column;
+}
+
+.p_del_head {
+    font-size: 130%;
+    margin: 0 0 1%;
+}
+
+.p_add_head {
+    font-size: 130%;
+    margin: 3% 0 1%;
+}
+
+.p_del {
+    font-size: 90%;
+    margin: 0 0 1%;
+}
+
+.sub_btn_del {
+    margin: 0 0 3%;
+    min-width: 48%;
+    max-width: 48%;
+}
+
+.slide_add {
+    margin: 0 0 4%;
+}
+
+@media screen and (max-width: 900px) {
+    .loadingImage {
+        width: 250px;
+        height: 150px;
+        margin: 0 0 2%;
+    }
+
+    .submit_header {
+        font-size: 90%;
+    }
+}

@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Main';
+    src: url('/fonts/Base02Cyrillic2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rock';
+    src: url('/fonts/ZMDCondensed.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Metal';
+    src: url('/fonts/28_DAYS_LATER_NOTHING.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Punk';
+    src: url('/fonts/HouseBrokenRoughHQ.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Core';
+    src: url('/fonts/Eater.ttf') format('truetype');
+}
+
+.Rock {
+    font-family: "Rock";
+    font-size: 135%;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
+
+.Metal {
+    font-family: "Metal";
+    font-size: 145%;
+}
+
+.Punk {
+    font-family: "Punk";
+    font-size: 160%;
+}
+
+.Core {
+    font-family: "Core";
+    font-size: 125%;
+}
+
+.Metal, .Punk, .Core {
+    letter-spacing: 7px;
+}
+
+.Rock, .Metal, .Punk, .Core {
+    text-transform: uppercase;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.Rock:hover, .Metal:hover, .Punk:hover, .Core:hover {
+    transition: 0.7s;
+    cursor: pointer;
+    color: black;
+    text-shadow: 0 0 0 black;
+}
+
+header {
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 5px 1%;
+    background-color: #000;
+}
+
+header, .title {
+    border-bottom: 2px solid white;
+}
+
+.h1 {
+    text-decoration: none;
+    font-family: "Main";
+    font-weight: unset;
+    font-size: 155%;
+    letter-spacing: 10px;
+    margin: 0;
+    width: fit-content;
+}
+
+.href_p {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: 0.5%;
+}
+.href, .href_exit {
+    text-decoration: none;
+}
+
+.title:hover, .menu:hover {
+    background-color: rgb(125, 125, 125);
+    text-shadow: 0 0 5px black;
+}
+
+.h1:hover, .menuList>li:hover, .href:hover, .href_exit:hover {
+    cursor: pointer;
+    color: black;
+    text-shadow: 0 0 0 black;
+}
+
+.href_exit:hover {
+    color: #600000;
+    text-shadow: 0 0 0 #600000;
+}
+
+.menu {
+    padding: 5px 0;
+    background-color: black;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuList > li {
+    margin: auto;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.title, .h1, .href, .href_exit, .title:hover, .menu:hover, .menu,.menuList>li {
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 100%;
+    }
+
+    header > * {
+        font-size: 70%;
+    }
+
+    .h1 {
+        font-size: 210%;
+        letter-spacing: 0px;
+    }
+    
+    .menuList > li {
+        font-size: 130%;
+    }
+
+    .Metal {
+        font-size: 155%;
+    }
+
+    .Punk {
+        font-size: 170%;
+    }
+
+    .Core {
+        font-size: 132%;
+    }
+}

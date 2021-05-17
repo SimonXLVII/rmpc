@@ -1,0 +1,55 @@
+.wrapper
+{
+    margin: 1% auto 0;
+    border: 3px outset white;
+}
+
+.slider
+{
+    overflow: hidden;
+}
+
+.slider_item
+{
+    object-fit: cover;
+    position: absolute;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.wrapper, .slider {
+    position: relative;
+}
+
+.wrapper, .slider, .slider_item {
+    width: 600px;
+    height: 400px;
+}
+
+.slide_descr {
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.hide
+{
+    opacity: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper, .slider, .slider_item {
+        width: 300px;
+        height: 200px;
+    }
+
+    .slide_descr {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+        font-style: italic;
+        font-size: 90%;
+    }
+}

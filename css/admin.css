@@ -1,0 +1,60 @@
+.btns {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.btns_block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 2% 8%;
+    box-shadow: inset 0 0 25px white;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.adm_btn, .adm_btn_exit, .adm_btn_back{
+    width: 70%;
+    margin: auto;
+    padding: 2% 7%;
+    transition: 0.7s;
+    background-color: black;
+    border: 2px solid rgb(125, 125, 125);
+    box-shadow: inset 0 0 10px rgb(125, 125, 125);
+    text-align: center;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    font-size: 130%;
+}
+
+.adm_btn:hover, .adm_btn_back:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(125, 125, 125);
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px black;
+    color: black;
+}
+
+.adm_btn_exit:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(125, 125, 125);
+    border: 2px solid #600000;
+    box-shadow: inset 0 0 10px #600000;
+    color: #600000;
+}
+
+
+@media screen and (max-width: 900px) {
+    .adm_btn, .adm_btn_back, .adm_btn_exit {
+        font-size: 90%;
+    }
+}

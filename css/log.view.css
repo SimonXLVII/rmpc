@@ -1,0 +1,59 @@
+.log_view_cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 auto;
+    letter-spacing: 5px;
+    font-size: 100%;
+    background-image: url('/img/bg/stenaStart.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+.log_form {
+    width: 35%;
+    margin: auto;
+}
+
+.log_view_block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    margin: 0;
+    box-shadow: inset 0 0 25px white;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.log_view_header {
+    margin: 0 auto 6%;
+    font-size: 150%;
+}
+
+.log_view_name, .log_view_password, .log_view_email {
+    width: 98%;
+    margin: 8% auto;
+    padding-left: 1%;
+}
+
+.log_view_btn {
+    transition: 0.7s;
+    min-width: 100%;
+    margin: 1% auto 9%;
+    background-color: black;
+    border: 2px solid rgb(125, 125, 125);
+    box-shadow: inset 0 0 10px rgb(125, 125, 125);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 130%;
+    padding: 2% 5%;
+}
+
+.log_view_btn:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(125, 125, 125);
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px black;
+    color: black;
+}
